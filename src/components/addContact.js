@@ -29,6 +29,7 @@ const [userID, setUserID] = useState(props.match.params.id)
     setName("");
     setEmail("");
     setTelephone();
+    history.push("/contactlist");
   };
 
   const history = useHistory();
