@@ -1,0 +1,287 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/bg-01.jpg);
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(219,21,99,.8);
+  background: -webkit-linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+  background: -o-linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+  background: -moz-linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+  background: linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+}
+.wrap-contact2 {
+  width: 790px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px;
+}
+.contact2-form {
+  width: 100%;
+}
+.contact2-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.wrap-input2 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+.input2 {
+  display: block;
+  width: 100%;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.2;
+}
+.focus-input2 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.focus-input2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+  background: #db1563;
+  background: -webkit-linear-gradient(45deg,#d5007d,#e53935);
+  background: -o-linear-gradient(45deg,#d5007d,#e53935);
+  background: -moz-linear-gradient(45deg,#d5007d,#e53935);
+  background: linear-gradient(45deg,#d5007d,#e53935);
+}
+input.input2+.focus-input2::after {
+  top: 16px;
+  left: 0;
+}
+textarea:focus, input:focus {
+  border-color: transparent!important;
+}
+.focus-input2::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.2;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+input.input2 {
+  height: 45px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+input[type="text"]{
+  color: #999999;
+}
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark-color(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: -internal-light-dark-color(white, black);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+.contact2-form-btn {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-135deg,#d5007d,#e53935,#d5007d,#e53935);
+  align-items: center;
+  padding: 0 20px;
+  min-width: 244px;
+  height: 50px;
+  margin: auto;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+/*---------------------------------------------*/
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+.card {
+  margin-bottom: 20px;
+}
+.btn {
+  border: 1px solid #e75a62 !important;
+  background: 0 !important;
+  color: #e65863 !important;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+input:focus {
+  border-color: #dcd0d0 !important;
+}
+.modal-body input {
+  width: 100%;
+  border: 1px solid #e65863;
+  margin: 10px 0;
+  padding: 10px;
+}
+.card-title.h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-info span {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-info {
+  text-align: left;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+button.btn:hover {
+  background: #e75963 !important;
+  color: white !important;
+}
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #57b846;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+
+.shadow.col-md-5.col-md-offset-6.card {
+  margin: 5px;
+}
+a.add{
+  background: white !important;
+}
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+a.add {
+  background: white !important;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.btn-header {
+  background-color: white !important;
+  padding: 15px 30px !important;
+  margin-bottom: 50px;
+}
